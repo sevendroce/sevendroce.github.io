@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>九妺窝有限公司_视频制作与社区内容_原创短片与创作者扶持</title>
+<meta name="description" content="九妺窝有限公司是一家专注原创视频制作与社区运营的机构，提供短片制作、剧情系列、纪录片、创作者扶持与线下放映等具体内容与项目介绍，适合内容创作者、品牌合作方与影视爱好者了解其业务与最新动态。">
+<meta name="keywords" content="原创短片制作,剧情系列,创作者扶持,线下放映,视频社区运营">
+<style>
+:root{
+  --ink:#15181f;
+  --ink-2:#39404f;
+  --ink-3:#6b7484;
+  --line:#e3e6ec;
+  --line-2:#cfd4de;
+  --bg:#f6f7fa;
+  --panel:#ffffff;
+  --brand:#c8324b;
+  --brand-2:#8f1f34;
+  --brand-soft:#fbe9ed;
+  --accent:#1b6a6f;
+  --accent-soft:#e3f2f2;
+  --gold:#b98a2e;
+  --gold-soft:#fbf3e2;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 1px 2px rgba(21,24,31,.05),0 8px 24px rgba(21,24,31,.06);
+  --shadow-sm:0 1px 2px rgba(21,24,31,.06);
+  --ann-h:40px;
+  --head-h:66px;
+  --maxw:1320px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--ann-h) + var(--head-h) + 14px)}
+body{
+  margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);
+  font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.32;font-weight:700;letter-spacing:.01em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font-family:inherit;cursor:pointer}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ---------- 吸顶公告条 ---------- */
+.annbar{
+  position:sticky;top:0;z-index:60;height:var(--ann-h);
+  background:linear-gradient(90deg,#1c2029,#2b2130 55%,#3a1f2a);
+  color:#f4e7ea;display:flex;align-items:center;
+}
+.annbar .wrap{display:flex;align-items:center;gap:14px;width:100%;overflow:hidden}
+.ann-tag{
+  flex:none;font-size:11.5px;letter-spacing:.14em;font-weight:700;
+  background:var(--brand);color:#fff;padding:2px 9px;border-radius:4px;
+}
+.ann-text{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#efdfe3}
+.ann-text b{color:#fff;font-weight:600}
+.ann-more{margin-left:auto;flex:none;font-size:12.5px;color:#e7b7c1;border-bottom:1px solid rgba(231,183,193,.5);padding-bottom:1px}
+.ann-more:hover{color:#fff;border-color:#fff}
+
+/* ---------- 页头 ---------- */
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;height:var(--head-h);
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head .wrap{display:flex;align-items:center;gap:26px;height:100%}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.1}
+.brand-name{font-size:16.5px;font-weight:800;letter-spacing:.02em}
+.brand-sub{font-size:10.5px;color:var(--ink-3);letter-spacing:.16em;margin-top:3px}
+.nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.nav a{
+  font-size:13.5px;color:var(--ink-2);padding:7px 11px;border-radius:8px;
+  transition:.16s;white-space:nowrap;
+}
+.nav a:hover,.nav a:focus-visible{background:var(--brand-soft);color:var(--brand-2)}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search{
+  display:flex;align-items:center;gap:6px;background:var(--bg);
+  border:1px solid var(--line-2);border-radius:999px;padding:5px 6px 5px 13px;
+}
+.search input{
+  border:0;background:transparent;outline:none;width:132px;font-size:13px;color:var(--ink);font-family:inherit;
+}
+.search input::placeholder{color:#9aa2b1}
+.search button{
+  border:0;background:var(--ink);color:#fff;border-radius:999px;
+  font-size:12px;padding:5px 12px;transition:.16s;
+}
+.search button:hover{background:var(--brand)}
+.btn-ghost{
+  border:1px solid var(--line-2);background:#fff;border-radius:999px;
+  font-size:13px;color:var(--ink-2);padding:7px 15px;transition:.16s;white-space:nowrap;
+}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-2)}
+.btn-solid{
+  border:0;background:var(--brand);color:#fff;border-radius:999px;
+  font-size:13px;padding:8px 17px;transition:.16s;white-space:nowrap;
+}
+.btn-solid:hover{background:var(--brand-2)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
+/* ---------- 首屏 ---------- */
+.hero{background:
+  radial-gradient(1200px 420px at 82% -10%,rgba(200,50,75,.10),transparent 60%),
+  radial-gradient(900px 380px at 8% 110%,rgba(27,106,111,.10),transparent 60%),
+  #fff;
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{display:grid;grid-template-columns:1.06fr .94fr;gap:44px;align-items:center;padding:52px 0 50px}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.1em;
+  color:var(--brand-2);background:var(--brand-soft);border:1px solid #f3d3da;
+  border-radius:999px;padding:4px 13px;margin-bottom:18px;font-weight:600;
+}
+.hero-tag i{width:6px;height:6px;border-radius:50%;background:var(--brand);display:block}
+h1{font-size:clamp(30px,4vw,46px);letter-spacing:.01em;line-height:1.2}
+.hero-lead{margin-top:18px;font-size:15.5px;color:var(--ink-2);max-width:560px;line-height:1.85}
+.hero-lead b{color:var(--ink);font-weight:700}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-stats{display:flex;gap:0;margin-top:32px;border-top:1px solid var(--line);padding-top:20px;flex-wrap:wrap}
+.hero-stat{padding-right:26px;margin-right:26px;border-right:1px solid var(--line)}
+.hero-stat:last-child{border-right:0;margin-right:0;padding-right:0}
+.hero-stat b{display:block;font-size:22px;font-weight:800;letter-spacing:.01em}
+.hero-stat span{font-size:12px;color:var(--ink-3);letter-spacing:.04em}
+.hero-visual{position:relative}
+.hero-frame{
+  border-radius:18px;overflow:hidden;border:1px solid var(--line);
+  box-shadow:var(--shadow);background:#fff;
+}
+.hero-frame img{width:100%;height:300px;object-fit:cover}
+.hero-frame-cap{
+  display:flex;align-items:center;gap:10px;padding:12px 16px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-3);
+}
+.dot-live{width:7px;height:7px;border-radius:50%;background:var(--brand);flex:none;box-shadow:0 0 0 3px var(--brand-soft)}
+.hero-float{
+  position:absolute;right:-10px;bottom:-22px;background:#fff;border:1px solid var(--line);
+  border-radius:12px;box-shadow:var(--shadow);padding:12px 16px;display:flex;gap:14px;align-items:center;
+}
+.hero-float .hf-num{font-size:19px;font-weight:800;color:var(--accent)}
+.hero-float .hf-txt{font-size:11.5px;color:var(--ink-3);line-height:1.5}
+
+/* ---------- 主布局：三栏门户 ---------- */
+.layout{
+  display:grid;grid-template-columns:178px minmax(0,1fr) 268px;
+  gap:28px;align-items:start;padding:34px 0 20px;
+}
+.side-left{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 18px)}
+.channel-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+.box-title{
+  font-size:12px;letter-spacing:.14em;color:var(--ink-3);font-weight:700;
+  padding:13px 15px 10px;border-bottom:1px solid var(--line);
+}
+.chan-list{padding:6px}
+.chan-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  padding:8px 10px;border-radius:8px;font-size:13.5px;color:var(--ink-2);transition:.15s;
+}
+.chan-list a:hover{background:var(--brand-soft);color:var(--brand-2)}
+.chan-list a span{font-size:11px;color:#a4abb8;font-variant-numeric:tabular-nums}
+.chan-list a:hover span{color:var(--brand)}
+.side-note{
+  margin-top:16px;background:var(--gold-soft);border:1px solid #efe0bf;border-radius:var(--radius);
+  padding:14px 15px;font-size:12.5px;color:#7a5f22;line-height:1.7;
+}
+.side-note b{display:block;color:#5e4815;font-size:13px;margin-bottom:5px}
+
+.main-col{min-width:0;display:flex;flex-direction:column;gap:30px}
+.side-right{display:flex;flex-direction:column;gap:20px}
+
+/* ---------- 通用板块 ---------- */
+.sec{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 26px;box-shadow:var(--shadow-sm)}
+.sec-head{display:flex;align-items:flex-end;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.sec-head h2{font-size:19px;letter-spacing:.01em}
+.sec-head .kicker{font-size:11.5px;letter-spacing:.16em;color:var(--brand);font-weight:700;text-transform:uppercase}
+.sec-desc{font-size:13px;color:var(--ink-3);margin-left:auto;max-width:420px;line-height:1.65}
+.sec-line{border:0;border-top:1px solid var(--line);margin:0 0 18px}
+
+/* 概览 */
+.overview p{font-size:14.5px;color:var(--ink-2);line-height:1.95;margin-bottom:14px}
+.overview p:last-child{margin-bottom:0}
+.overview .hl{background:linear-gradient(transparent 62%,var(--brand-soft) 62%);font-weight:600;color:var(--ink)}
+.ov-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.ov-item{background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 14px}
+.ov-item b{display:block;font-size:13px;margin-bottom:4px}
+.ov-item span{font-size:12px;color:var(--ink-3);line-height:1.6}
+
+/* 精选卡片 */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:.18s;
+}
+.card:hover{border-color:#e3c3ca;box-shadow:var(--shadow);transform:translateY(-2px)}
+.card-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:#eef0f4}
+.card-media img{width:100%;height:100%;object-fit:cover;transition:.3s}
+.card:hover .card-media img{transform:scale(1.035)}
+.card-badge{
+  position:absolute;left:10px;top:10px;background:rgba(21,24,31,.82);color:#fff;
+  font-size:11px;padding:2px 8px;border-radius:5px;letter-spacing:.04em;backdrop-filter:blur(4px);
+}
+.card-body{padding:14px 15px 15px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card-body h3{font-size:15px;line-height:1.45}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;color:var(--accent);background:var(--accent-soft);border-radius:4px;padding:1.5px 7px;letter-spacing:.02em}
+.tag.warm{color:#8a5a12;background:var(--gold-soft)}
+.card-text{font-size:12.8px;color:var(--ink-3);line-height:1.7;flex:1}
+.card-meta{display:flex;align-items:center;gap:10px;font-size:11.5px;color:#98a0ae;border-top:1px dashed var(--line);padding-top:9px}
+.card-meta .score{color:var(--brand);font-weight:700}
+
+/* 更新流 */
+.feed{display:flex;flex-direction:column}
+.feed-item{display:flex;gap:12px;padding:13px 0;border-bottom:1px dashed var(--line)}
+.feed-item:first-child{padding-top:0}
+.feed-item:last-child{border-bottom:0;padding-bottom:0}
+.feed-time{flex:none;width:74px;font-size:11.5px;color:#9aa2b1;line-height:1.6;padding-top:2px;font-variant-numeric:tabular-nums}
+.feed-body{min-width:0}
+.feed-body h3{font-size:13.8px;margin-bottom:3px;font-weight:600}
+.feed-body p{font-size:12.6px;color:var(--ink-3);line-height:1.65}
+.feed-body em{font-style:normal;color:var(--brand);font-weight:600}
+
+/* 分类入口 */
+.cat-wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  border:1px solid var(--line);border-radius:11px;padding:15px 14px;background:#fff;
+  transition:.16s;text-align:left;display:flex;flex-direction:column;gap:5px;
+}
+.cat:hover{border-color:var(--brand);background:var(--brand-soft)}
+.cat b{font-size:14px}
+.cat span{font-size:11.5px;color:var(--ink-3);line-height:1.55}
+.cat em{font-style:normal;font-size:11px;color:var(--brand);font-weight:700;letter-spacing:.04em}
+
+/* 深度解析 */
+.deep h2{font-size:20px;margin-bottom:6px}
+.deep-lead{font-size:13.5px;color:var(--ink-3);margin-bottom:20px;line-height:1.8}
+.deep h3{font-size:15.5px;margin:24px 0 9px;padding-left:11px;border-left:3px solid var(--brand);line-height:1.4}
+.deep h3:first-of-type{margin-top:6px}
+.deep p{font-size:14.3px;color:var(--ink-2);line-height:1.95;margin-bottom:11px}
+.deep ul{margin:8px 0 14px;display:flex;flex-direction:column;gap:7px}
+.deep ul li{font-size:13.8px;color:var(--ink-2);padding-left:18px;position:relative;line-height:1.8}
+.deep ul li::before{content:"";position:absolute;left:2px;top:11px;width:6px;height:6px;border-radius:2px;background:var(--brand);opacity:.55}
+.deep ul li b{color:var(--ink);font-weight:700}
+.deep-quote{
+  border-left:3px solid var(--gold);background:var(--gold-soft);border-radius:0 10px 10px 0;
+  padding:13px 17px;font-size:13.5px;color:#6b531c;line-height:1.85;margin:16px 0;
+}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0 18px}
+.compare-col{border:1px solid var(--line);border-radius:11px;padding:14px 15px;background:var(--bg)}
+.compare-col h4{font-size:13.5px;margin-bottom:8px;color:var(--brand-2)}
+.compare-col li{font-size:12.6px;color:var(--ink-2);padding-left:15px;position:relative;line-height:1.8;margin-bottom:4px}
+.compare-col li::before{content:"·";position:absolute;left:3px;top:-1px;color:var(--brand);font-weight:800}
+
+/* 体验指南 步骤 */
+.steps{display:flex;flex-direction:column;gap:0;counter-reset:st}
+.step{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:15px 0;border-bottom:1px dashed var(--line)}
+.step:last-child{border-bottom:0;padding-bottom:0}
+.step-num{
+  width:36px;height:36px;border-radius:10px;background:var(--brand-soft);color:var(--brand-2);
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14.5px;
+}
+.step h3{font-size:14.3px;margin-bottom:4px}
+.step p{font-size:13px;color:var(--ink-3);line-height:1.75}
+.step p b{color:var(--ink-2);font-weight:600}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:10px;margin-bottom:9px;background:#fff;overflow:hidden}
+.faq details[open]{border-color:#e8cbd2;background:#fffafb}
+.faq summary{
+  list-style:none;cursor:pointer;padding:13px 16px;font-size:14px;font-weight:600;
+  display:flex;align-items:center;gap:10px;color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";margin-left:auto;color:var(--brand);font-weight:700;font-size:17px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 16px 15px;font-size:13.4px;color:var(--ink-3);line-height:1.85}
+.faq .ans b{color:var(--ink-2)}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmt{border:1px solid var(--line);border-radius:11px;padding:13px 14px;background:#fff}
+.cmt-top{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.avatar{
+  width:28px;height:28px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;color:#fff;letter-spacing:.02em;
+}
+.cmt-name{font-size:12.8px;font-weight:600}
+.cmt-when{font-size:11px;color:#a4abb8;margin-left:auto}
+.cmt p{font-size:12.8px;color:var(--ink-2);line-height:1.75}
+.cmt .ref{color:var(--accent);font-weight:600}
+
+/* 资讯 */
+.news-list{display:flex;flex-direction:column;gap:0}
+.news{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.news:first-child{padding-top:0}
+.news:last-child{border-bottom:0;padding-bottom:0}
+.news img{width:104px;height:70px;object-fit:cover;border-radius:8px;flex:none}
+.news-body h3{font-size:14px;margin-bottom:4px;line-height:1.5}
+.news-body p{font-size:12.6px;color:var(--ink-3);line-height:1.65}
+.news-date{font-size:11.5px;color:#a4abb8;margin-top:5px;font-variant-numeric:tabular-nums}
+
+/* 相关推荐 标签索引 */
+.rel-tags{display:flex;flex-wrap:wrap;gap:9px}
+.rel-tags a{
+  font-size:13px;border:1px solid var(--line-2);border-radius:999px;padding:6px 15px;
+  color:var(--ink-2);transition:.15s;background:#fff;
+}
+.rel-tags a:hover{border-color:var(--brand);color:var(--brand-2);background:var(--brand-soft)}
+.rel-tags a b{font-weight:600;color:var(--brand)}
+
+/* 榜单 */
+.rank-list{counter-reset:rk;display:flex;flex-direction:column}
+.rank-item{
+  display:grid;grid-template-columns:26px 1fr auto;gap:11px;align-items:center;
+  padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.rank-item:last-child{border-bottom:0;padding-bottom:0}
+.rank-item::before{
+  counter-increment:rk;content:counter(rk);font-size:13px;font-weight:800;color:#c3c9d4;
+  text-align:center;font-variant-numeric:tabular-nums;
+}
+.rank-item:nth-child(-n+3)::before{color:var(--brand)}
+.rank-name{font-size:13.6px;font-weight:600;line-height:1.5}
+.rank-name span{display:block;font-size:11.5px;color:var(--ink-3);font-weight:400;margin-top:1px}
+.rank-val{font-size:12px;color:var(--brand);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:20px}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl{position:relative;padding-bottom:17px}
+.tl:last-child{padding-bottom:0}
+.tl::before{
+  content:"";position:absolute;left:-20px;top:6px;width:12px;height:12px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--line-2);
+}
+.tl.on::before{border-color:var(--brand);background:var(--brand)}
+.tl-date{font-size:11.5px;color:#a4abb8;letter-spacing:.03em;font-variant-numeric:tabular-nums}
+.tl h3{font-size:13.6px;margin:2px 0 2px}
+.tl p{font-size:12.6px;color:var(--ink-3);line-height:1.65}
+
+/* 右侧栏 */
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:17px 17px 19px;box-shadow:var(--shadow-sm)}
+.panel h2{font-size:13.5px;letter-spacing:.03em;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.panel h2::before{content:"";width:3px;height:14px;border-radius:2px;background:var(--brand)}
+.mini-rank{counter-reset:mr}
+.mini-rank li{
+  display:flex;gap:9px;align-items:flex-start;padding:8px 0;border-bottom:1px dashed var(--line);
+  font-size:12.8px;line-height:1.5;
+}
+.mini-rank li:last-child{border-bottom:0;padding-bottom:0}
+.mini-rank li::before{
+  counter-increment:mr;content:counter(mr);flex:none;width:17px;height:17px;border-radius:5px;
+  background:var(--bg);color:#98a0ae;font-size:10.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;
+}
+.mini-rank li:nth-child(-n+3)::before{background:var(--brand);color:#fff}
+.mini-rank b{font-weight:600}
+.mini-rank span{display:block;font-size:11px;color:#a4abb8;margin-top:1px}
+.update-stream li{font-size:12.6px;color:var(--ink-2);padding:7px 0;border-bottom:1px dashed var(--line);line-height:1.6}
+.update-stream li:last-child{border-bottom:0;padding-bottom:0}
+.update-stream time{display:block;font-size:11px;color:#a4abb8;margin-bottom:1px}
+.panel-cta{background:linear-gradient(150deg,#2b2130,#3a1f2a);color:#f4e7ea;border:0}
+.panel-cta h2{color:#fff}
+.panel-cta h2::before{background:#e7b7c1}
+.panel-cta p{font-size:12.6px;line-height:1.8;color:#dcc6cb;margin-bottom:13px}
+.panel-cta .btn-solid{background:#fff;color:#2b2130;display:inline-block;font-weight:700}
+.panel-cta .btn-solid:hover{background:#f0e2e5}
+
+/* 结果提示 */
+.no-result{
+  display:none;padding:16px;border:1px dashed var(--line-2);border-radius:10px;
+  font-size:13.5px;color:var(--ink-3);text-align:center;background:var(--bg);
+}
+.no-result.show{display:block}
+.hide{display:none !important}
+
+/* ---------- 页尾 ---------- */
+.foot{background:#171a21;color:#b9c0cd;margin-top:44px;padding:44px 0 0}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.09)}
+.foot-brand .brand-name{color:#fff;font-size:17px}
+.foot-brand .brand-sub{color:#8b93a3}
+.foot-brand p{font-size:12.8px;line-height:1.85;color:#8b93a3;margin-top:14px;max-width:300px}
+.foot-col h3{font-size:12.5px;color:#fff;letter-spacing:.1em;margin-bottom:13px}
+.foot-col a{display:block;font-size:12.8px;color:#9aa2b1;padding:4px 0;transition:.15s}
+.foot-col a:hover{color:#fff}
+.foot-bot{display:flex;gap:16px;flex-wrap:wrap;align-items:center;padding:20px 0 26px;font-size:12px;color:#727a89}
+.foot-bot .dot{width:3px;height:3px;border-radius:50%;background:#4a5160}
+.foot-bot .sp{margin-left:auto}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1180px){
+  .layout{grid-template-columns:168px minmax(0,1fr) 240px;gap:20px}
+  .hero-inner{gap:30px}
+  .cat-wrap{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 258px;gap:22px}
+  .side-left{display:none}
+  .hero-inner{grid-template-columns:1fr;gap:30px;padding:38px 0 42px}
+  .hero-frame img{height:260px}
+  .hero-float{right:8px;bottom:-16px}
+  .ov-grid{grid-template-columns:repeat(2,1fr)}
+  .foot-top{grid-template-columns:1fr 1fr;gap:26px}
+  .nav{gap:0}
+  .nav a{padding:6px 9px;font-size:13px}
+  .head-tools .btn-ghost{display:none}
+}
+@media (max-width:820px){
+  .search input{width:96px}
+}
+@media (max-width:740px){
+  :root{--head-h:58px;--ann-h:36px}
+  body{font-size:14.5px}
+  .wrap{padding:0 16px}
+  .layout{grid-template-columns:minmax(0,1fr);gap:20px;padding:22px 0 12px}
+  .side-right{order:2}
+  .head .wrap{gap:12px}
+  .brand-sub{display:none}
+  .brand-name{font-size:15px}
+  .nav{display:none}
+  .head-tools{margin-left:auto}
+  .search{padding:4px 5px 4px 11px}
+  .search input{width:88px;font-size:12.5px}
+  .search button{padding:4px 10px;font-size:11.5px}
+  .ann-text{font-size:12px}
+  .ann-more{display:none}
+  .hero-inner{padding:28px 0 34px;gap:26px}
+  .hero-lead{font-size:14.5px}
+  .hero-stats{gap:0;margin-top:24px;padding-top:16px}
+  .hero-stat{padding-right:16px;margin-right:16px}
+  .hero-stat b{font-size:18px}
+  .hero-stat span{font-size:11px}
+  .hero-frame img{height:200px}
+  .hero-float{padding:9px 12px;gap:9px;right:4px;bottom:-14px}
+  .hero-float .hf-num{font-size:16px}
+  .sec{padding:18px 16px 20px;border-radius:12px}
+  .sec-head h2{font-size:17px}
+  .sec-desc{margin-left:0;width:100%;max-width:none;font-size:12.5px}
+  .cards{grid-template-columns:1fr}
+  .ov-grid{grid-template-columns:1fr}
+  .cat-wrap{grid-template-columns:1fr 1fr}
+  .cat{padding:12px 12px}
+  .cat b{font-size:13.2px}
+  .cat span{font-size:11px}
+  .deep h2{font-size:18px}
+  .compare{grid-template-columns:1fr}
+  .cmt-grid{grid-template-columns:1fr}
+  .feed-time{width:62px;font-size:10.8px}
+  .news img{width:82px;height:58px}
+  .step{grid-template-columns:32px 1fr;gap:11px}
+  .step-num{width:30px;height:30px;font-size:13px;border-radius:8px}
+  .foot-top{grid-template-columns:1fr;gap:22px}
+  .foot-bot{font-size:11.5px}
+  .foot-bot .sp{margin-left:0;width:100%}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="annbar" role="region" aria-label="站内更新公告">
+  <div class="wrap">
+    <span class="ann-tag">NEW</span>
+    <p class="ann-text"><b>11 月 25 日</b> 更新：剧情短片《潮汐之后》第 6 集上线 · 冬季创作者扶持计划开放 30 个名额 · 《老城手记》纪录片 4K 修复版入库</p>
+    <a class="ann-more" href="/#updates">全部动态</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="九妺窝有限公司首页">
+      <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true">
+        <rect x="1.5" y="1.5" width="41" height="41" rx="11" fill="#c8324b"/>
+        <path d="M13 14.5v9.2c0 4 2.9 6.6 7.6 6.6 2.4 0 4.4-.6 6-1.8v3.3c-1.7.9-3.9 1.4-6.4 1.4C13.4 33.2 9 29 9 23.9V14.5h4z" fill="#fff"/>
+        <circle cx="31.4" cy="15" r="3.6" fill="#f6cdd5"/>
+        <path d="M26.6 33.2l4.9-9.6 4.9 9.6h-9.8z" fill="#f6cdd5" opacity=".92"/>
+      </svg>
+      <span class="brand-txt">
+        <span class="brand-name">九妺窝有限公司</span>
+        <span class="brand-sub">JIUMEIWO · STUDIO</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="/#overview">品牌概览</a>
+      <a href="/#works">精选作品</a>
+      <a href="/#updates">最新动态</a>
+      <a href="/#categories">内容分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#news">行业资讯</a>
+    </nav>
+    <div class="head-tools">
+      <form class="search" role="search" id="searchForm" aria-label="站内内容搜索">
+        <input type="search" id="searchInput" placeholder="搜作品 / 类型" aria-label="搜索作品或类型">
+        <button type="submit">查找</button>
+      </form>
+      <a class="btn-ghost" href="/#guide">合作洽谈</a>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="hero-tag"><i></i>原创视频制作 · 社区内容运营</span>
+      <h1>九妺窝有限公司</h1>
+      <p class="hero-lead">一家以剧情短片与人物纪录为核心的内容机构，自建拍摄团队与后期工坊，同时运营面向创作者的开放社区。目前稳定更新 <b>《潮汐之后》《老城手记》《夜行电台》</b> 三条内容线，并每月开放一次扶持名额与线下放映。</p>
+      <div class="hero-acts">
+        <a class="btn-solid" href="/#works">浏览精选作品</a>
+        <a class="btn-ghost" href="/#categories">按类型查找</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>3</b><span>在更内容线</span></div>
+        <div class="hero-stat"><b>216</b><span>已上线作品</span></div>
+        <div class="hero-stat"><b>48</b><span>扶持创作者</span></div>
+        <div class="hero-stat"><b>11/25</b><span>本周更新日</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-frame">
+        <img src="https://picsum.photos/seed/jiumeiwostudio-hero01/800/400" width="800" height="400" alt="剧情短片《潮汐之后》海边取景现场" loading="lazy">
+        <div class="hero-frame-cap">
+          <span class="dot-live" aria-hidden="true"></span>
+          <span>在拍项目：《潮汐之后》第 7 集 · 外景第二日</span>
+        </div>
+      </div>
+      <div class="hero-float">
+        <div>
+          <div class="hf-num">11/29</div>
+          <div class="hf-txt">线下放映<br>《老城手记》修复版</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 三栏门户 -->
+<div class="wrap layout">
+
+  <!-- 左频道索引 -->
+  <aside class="side-left" aria-label="内容频道索引">
+    <div class="channel-box">
+      <div class="box-title">内容频道</div>
+      <nav class="chan-list" aria-label="频道列表">
+        <a href="/#works">剧情短片<span>42</span></a>
+        <a href="/#works">人物纪录<span>28</span></a>
+        <a href="/#works">城市漫游<span>19</span></a>
+        <a href="/#works">实验影像<span>16</span></a>
+        <a href="/#works">幕后制作<span>34</span></a>
+        <a href="/#works">夜行电台<span>23</span></a>
+        <a href="/#works">短片竞赛<span>11</span></a>
+        <a href="/#works">放映活动<span>15</span></a>
+        <a href="/#news">行业资讯<span>28</span></a>
+        <a href="/#guide">创作者扶持<span>12</span></a>
+      </nav>
+    </div>
+    <div class="side-note">
+      <b>冬季扶持计划</b>
+      2026 年 12 月批共 30 个名额，11 月 30 日截止提交，含设备、后期与发行支持。
+      <p style="margin-top:8px"><a href="/#guide" style="color:#8a5a12;font-weight:700;border-bottom:1px solid #d8c395">查看申请条件 →</a></p>
+    </div>
+  </aside>
+
+  <!-- 主内容 -->
+  <main class="main-col">
+
+    <!-- 1. 主题领域概览 -->
+    <section class="sec overview" id="overview">
+      <div class="sec-head">
+        <span class="kicker">OVERVIEW</span>
+        <h2>原创视频机构在做什么：类型、产能与评判维度</h2>
+      </div>
+      <hr class="sec-line">
+      <p>像<span class="hl">九妺窝有限公司</span>这样的原创视频机构，日常工作可以拆成三条并行的产线：一是自制内容，包括剧情短片、人物纪录与城市漫游这类偏叙事的作品；二是制作服务，为品牌、文化机构与独立导演提供拍摄、剪辑、调色与声音设计；三是社区与扶持，通过开放投稿、评审与放映把外部创作者纳入进来。三条线的产出形态不同，观众看到的是成片，合作方看到的是流程，创作者看到的是机会。</p>
+      <p>从内容方向上看，当前值得关注的具体类型主要有四类。第一类是<b>单集 15—25 分钟的剧情短片</b>，以《潮汐之后》为代表，采用连续人物、单集独立事件的写法；第二类是<b>人物纪录</b>，如《老城手记》，以手艺人和街巷为对象，单集聚焦一人一景；第三类是<b>音频+影像混合的夜谈节目</b>，如《夜行电台》，每期围绕一个具体话题；第四类是<b>实验影像与短片竞赛单元</b>，用于试新形式与发现新人。四类的更新节奏、制作成本与观看门槛差异明显，也是判断一个机构内容取向的直接依据。</p>
+      <p>对普通观众来说，判断这类机构值不值得长期关注，通常看三件事：内容线是否稳定更新、单集完成度是否一致、以及是否有可追溯的制作说明。对创作者来说，还要额外看扶持计划的具体条款——设备支持范围、版权归属、发行渠道与结算方式。这些信息比宣传语更能说明一家视频公司的实际能力边界。</p>
+      <div class="ov-grid">
+        <div class="ov-item"><b>叙事内容线</b><span>《潮汐之后》剧情短片，双周更，单集 18—24 分钟</span></div>
+        <div class="ov-item"><b>纪录内容线</b><span>《老城手记》人物纪录，月更，4K 修复版陆续入库</span></div>
+        <div class="ov-item"><b>社区与扶持</b><span>季度评审 + 冬季批 30 个名额，含后期与发行支持</span></div>
+      </div>
+    </section>
+
+    <!-- 2. 精选内容推荐 -->
+    <section class="sec" id="works">
+      <div class="sec-head">
+        <span class="kicker">SELECTED</span>
+        <h2>精选作品与项目</h2>
+        <p class="sec-desc">当前可观看的 8 个具体条目，含类型、看点与更新状态。可用上方搜索框按名称或类型筛选。</p>
+      </div>
+      <div class="cards" id="workCards">
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/chaoxizhihou-juben17/400/300" width="400" height="300" alt="剧情短片《潮汐之后》海边礁石剧照" loading="lazy">
+            <span class="card-badge">剧情短片</span>
+          </div>
+          <div class="card-body">
+            <h3>潮汐之后</h3>
+            <div class="card-tags"><span class="tag">连续剧式短片</span><span class="tag">海边小镇</span><span class="tag warm">双周更</span></div>
+            <p class="card-text">以浙东渔镇为背景的连续短片，每集围绕一个返乡人物的选择展开。第 6 集已上线，摄影与声音设计是主要看点，适合喜欢慢节奏现实题材的观众。</p>
+            <div class="card-meta"><span class="score">8.7</span><span>更新至第 6 集</span><span>11-25</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/laochengsouji-doc22/400/300" width="400" height="300" alt="人物纪录片《老城手记》修表匠工作台" loading="lazy">
+            <span class="card-badge">人物纪录</span>
+          </div>
+          <div class="card-body">
+            <h3>老城手记</h3>
+            <div class="card-tags"><span class="tag">手艺人</span><span class="tag">街巷纪录</span><span class="tag warm">4K 修复</span></div>
+            <p class="card-text">单集聚焦一位老城手艺人，从修表、制秤到裱画，镜头克制、采访极简。11 月起陆续上线 4K 修复版，画质提升后可看清工具细节与手部动作。</p>
+            <div class="card-meta"><span class="score">9.1</span><span>已上线 28 集</span><span>11-24</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/yexingdiantai-audio08/400/300" width="400" height="300" alt="夜谈节目《夜行电台》录音室场景" loading="lazy">
+            <span class="card-badge">夜谈节目</span>
+          </div>
+          <div class="card-body">
+            <h3>夜行电台</h3>
+            <div class="card-tags"><span class="tag">音频+影像</span><span class="tag">城市夜谈</span><span class="tag">周更</span></div>
+            <p class="card-text">每期围绕一个具体话题展开的双人对谈，录制于深夜的实景空间。第 23 期聊“夜间工作者的通勤”，适合通勤或睡前收听，也适合剪辑学习者观察声音层次。</p>
+            <div class="card-meta"><span class="score">8.4</span><span>更新至第 23 期</span><span>11-22</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/chengshimanyou-walk31/400/300" width="400" height="300" alt="城市漫游系列《一条街的三小时》街景" loading="lazy">
+            <span class="card-badge">城市漫游</span>
+          </div>
+          <div class="card-body">
+            <h3>一条街的三小时</h3>
+            <div class="card-tags"><span class="tag">长镜头</span><span class="tag">街景观察</span><span class="tag warm">新上线</span></div>
+            <p class="card-text">用接近实时的方式记录一条街道从清晨到午后的人流变化，几乎不剪辑。看点在于环境声的完整保留，适合作为纪录片声音课素材。</p>
+            <div class="card-meta"><span class="score">8.2</span><span>11-21 上线</span><span>单集 46 分钟</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/muhouzhizuo-bts14/400/300" width="400" height="300" alt="幕后制作《一盏灯的布光》片场灯光布置" loading="lazy">
+            <span class="card-badge">幕后制作</span>
+          </div>
+          <div class="card-body">
+            <h3>一盏灯的布光</h3>
+            <div class="card-tags"><span class="tag">布光教学</span><span class="tag">低成本拍摄</span><span class="tag">工具向</span></div>
+            <p class="card-text">用单灯完成五种常见人物布光的实操演示，每段附参数与机位图。适合刚接触拍摄的创作者，观看后可直接复用现场方案。</p>
+            <div class="card-meta"><span class="score">8.9</span><span>共 5 集</span><span>11-19</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/shiyanyingxiang-exp09/400/300" width="400" height="300" alt="实验影像《回声采样》抽象画面" loading="lazy">
+            <span class="card-badge">实验影像</span>
+          </div>
+          <div class="card-body">
+            <h3>回声采样</h3>
+            <div class="card-tags"><span class="tag">声画实验</span><span class="tag">短时长</span><span class="tag">单集独立</span></div>
+            <p class="card-text">把城市录音拆解成节奏与纹理，再与固定机位画面重组。单集 8 分钟以内，适合在短片竞赛单元放映前做暖场，也适合声音设计爱好者拆解。</p>
+            <div class="card-meta"><span class="score">7.9</span><span>共 6 集</span><span>11-16</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/duanpianjingsai-award05/400/300" width="400" height="300" alt="短片竞赛单元放映现场观众席" loading="lazy">
+            <span class="card-badge">短片竞赛</span>
+          </div>
+          <div class="card-body">
+            <h3>冬季短片竞赛单元</h3>
+            <div class="card-tags"><span class="tag">新人作品</span><span class="tag">评审制</span><span class="tag warm">征片中</span></div>
+            <p class="card-text">面向 3—15 分钟短片的季度竞赛，本期评审关注叙事完整度与声音设计两项。入围作品将在 12 月的线下放映中播出，并进入社区首页推荐位。</p>
+            <div class="card-meta"><span class="score">11-30 截止</span><span>已收 87 部</span><span>11-18</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/fangyinghuodong-screening12/400/300" width="400" height="300" alt="线下放映活动《老城手记》修复版放映厅" loading="lazy">
+            <span class="card-badge">放映活动</span>
+          </div>
+          <div class="card-body">
+            <h3>《老城手记》修复版放映</h3>
+            <div class="card-tags"><span class="tag">线下活动</span><span class="tag">导演到场</span><span class="tag">映后谈</span></div>
+            <p class="card-text">11 月 29 日 19:30 在城西放映厅举行，放映修复版前三集，映后有 40 分钟导演与摄影对谈，现场设提问环节。</p>
+            <div class="card-meta"><span class="score">余 36 席</span><span>11-29 19:30</span><span>需预约</span></div>
+          </div>
+        </article>
+
+      </div>
+      <p class="no-result" id="noResult">没有匹配的作品，试试“纪录”“剧情”“幕后”或具体片名。</p>
+    </section>
+
+    <!-- 3. 最新更新 -->
+    <section class="sec" id="updates">
+      <div class="sec-head">
+        <span class="kicker">UPDATES</span>
+        <h2>最新更新与动态</h2>
+        <p class="sec-desc">近 30 天内的具体上线、开放与调整条目。</p>
+      </div>
+      <hr class="sec-line">
+      <div class="feed">
+        <div class="feed-item"><div class="feed-time">今天 09:30</div><div class="feed-body"><h3>《潮汐之后》第 6 集上线</h3><p>本集标题《退潮》，片长 21 分钟，新增角色“船厂会计”，<em>片尾附 3 分钟制作说明</em>。</p></div></div>
+        <div class="feed-item"><div class="feed-time">今天 08:10</div><div class="feed-body"><h3>冬季创作者扶持计划开放申请</h3><p>本批 30 个名额，覆盖设备租借、后期工时与发行对接，11 月 30 日 24:00 截止。</p></div></div>
+        <div class="feed-item"><div class="feed-time">昨天 21:10</div><div class="feed-body"><h3>《老城手记》第 27、28 集 4K 修复版入库</h3><p>修复重点为暗部噪点与手部特写锐度，原版仍保留在旧片库中可对照观看。</p></div></div>
+        <div class="feed-item"><div class="feed-time">昨天 16:40</div><div class="feed-body"><h3>《夜行电台》第 23 期上线</h3><p>话题为“夜间工作者的通勤”，全长 52 分钟，附完整文字稿与配乐清单。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 23 日</div><div class="feed-body"><h3>短片竞赛单元征片数破 87 部</h3><p>本期新增“声音设计”单项评审，由后期工坊三位声音师轮值打分。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 22 日</div><div class="feed-body"><h3>《一条街的三小时》上线</h3><p>城市漫游系列首集，46 分钟长镜头，保留完整环境声，提供耳机收听建议。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 21 日</div><div class="feed-body"><h3>后期工坊开放外部预约</h3><p>调色与混音两条线各开放 8 个时段，面向已完成拍摄的独立项目。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 19 日</div><div class="feed-body"><h3>《一盏灯的布光》更新第 5 集</h3><p>本集讲逆光下的面部补光，附机位图与三档功率对照表。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 18 日</div><div class="feed-body"><h3>11 月 29 日放映活动开放预约</h3><p>《老城手记》修复版前三集，映后设 40 分钟对谈，现场余 36 席。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 16 日</div><div class="feed-body"><h3>实验影像《回声采样》全 6 集完结</h3><p>末集《低频》使用地铁通风口录音，建议佩戴封闭式耳机观看。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 12 日</div><div class="feed-body"><h3>社区投稿规则调整</h3><p>投稿需标注素材来源与音乐授权，未标注作品将退回补正，不影响再次提交。</p></div></div>
+        <div class="feed-item"><div class="feed-time">11 月 3 日</div><div class="feed-body"><h3>《潮汐之后》前五集上线导演评论音轨</h3><p>每集片尾追加 10—15 分钟口述，讲选角与现场调度。</p></div></div>
+      </div>
+    </section>
+
+    <!-- 4. 分类入口 -->
+    <section class="sec" id="categories">
+      <div class="sec-head">
+        <span class="kicker">CATEGORIES</span>
+        <h2>按类型查找内容</h2>
+        <p class="sec-desc">8 个具体垂类，点击后跳转至对应内容区。</p>
+      </div>
+      <div class="cat-wrap">
+        <a class="cat" href="/#works"><em>42 部</em><b>剧情短片</b><span>连续人物、单集独立事件，18—24 分钟为主</span></a>
+        <a class="cat" href="/#works"><em>28 集</em><b>人物纪录</b><span>一人一景，采访极简，重现场细节</span></a>
+        <a class="cat" href="/#works"><em>19 集</em><b>城市漫游</b><span>长镜头与实时记录，保留完整环境声</span></a>
+        <a class="cat" href="/#works"><em>16 部</em><b>实验影像</b><span>声画重组、短时长，多在竞赛单元放映</span></a>
+        <a class="cat" href="/#works"><em>34 集</em><b>幕后制作</b><span>布光、收音、调色等可复用的现场方法</span></a>
+        <a class="cat" href="/#works"><em>23 期</em><b>夜谈节目</b><span>音频为主、影像辅助，适合通勤收听</span></a>
+        <a class="cat" href="/#works"><em>11 届</em><b>短片竞赛</b><span>季度评审制，入围进入线下放映</span></a>
+        <a class="cat" href="/#works"><em>15 场</em><b>放映活动</b><span>线下观影加映后谈，需提前预约席位</span></a>
+      </div>
+    </section>
+
+    <!-- 5. 深度解析 -->
+    <section class="sec deep" id="deep">
+      <span class="kicker" style="font-size:11.5px;letter-spacing:.16em;color:var(--brand);font-weight:700">IN DEPTH</span>
+      <h2 style="margin-top:6px">剧情短片、人物纪录与实验影像：三类内容到底差在哪</h2>
+      <p class="deep-lead">同属原创视频，三类内容的制作逻辑、观看方式和判断标准完全不同。下面按类型拆开讲，并给出具体的比较维度。</p>
+
+      <h3>一、剧情短片：看的是结构，不是场面</h3>
+      <p>剧情短片的核心难点在结构。20 分钟左右的体量，无法靠铺陈取胜，必须在开场五分钟内建立人物处境，在结尾前完成一次明确的转变。《潮汐之后》采用的是“单集独立事件 + 连续人物关系”的写法：每集有一个自足的小冲突，比如退潮后渔获分配、船厂账目核对，但人物的前史跨集累积。这种写法的好处是新观众可以从任意一集进入，代价是情感浓度需要靠表演和镜头补足。</p>
+      <p>判断一部剧情短片是否值得投入时间，可以看三个具体位置：</p>
+      <ul>
+        <li><b>开场三分钟的信息密度</b>——是否用画面而非台词交代了人物关系与空间。</li>
+        <li><b>转折点是否由人物选择推动</b>——如果转折依赖巧合或外部事件，通常是剧本未打磨到位。</li>
+        <li><b>结尾是否留下具体而非抽象的余味</b>——好的短片结尾往往停在一个动作或物件上，而不是一段总结性独白。</li>
+      </ul>
+      <div class="deep-quote">一个实用的检验方法：关掉声音看前五分钟，如果仍能大致理解人物在做什么、彼此是什么关系，说明这部短片的视听叙事是成立的。</div>
+
+      <h3>二、人物纪录：看的是取舍，不是素材量</h3>
+      <p>人物纪录的常见误区是以为拍得越多越好。《老城手记》单集通常只有 22—26 分钟，却要覆盖一位手艺人的工作方式、生活半径和一个具体困境，取舍压力很大。它的做法是只保留三种镜头：手上的动作、空间的细节、以及被访者停顿的瞬间。前两种提供信息，第三种提供情绪，三者交替形成节奏。</p>
+      <p>观看人物纪录时，可以留意几个容易被忽略的点：受访者是否在重复回答、镜头是否只在人物说话时才存在、环境声是否被过度压掉。如果一部纪录片里被访者始终处于“被采访”状态，缺少独处的镜头，那它更接近访谈节目而非纪录片。</p>
+
+      <h3>三、实验影像：看的是方法，不是理解</h3>
+      <p>实验影像不承担叙事任务，它更接近一次方法演示。《回声采样》把城市录音拆成节奏层与纹理层，再与固定机位画面重组，观众不需要“看懂”，而是观察声音与画面如何互相改写时间感。这类作品通常时长在 10 分钟以内，适合放在竞赛单元或放映活动的前段，用于调整观看状态。</p>
+      <p>判断实验影像的质量，主要看方法的执行是否彻底：如果一部作品声称用声音主导剪辑，那么画面的切换点是否真的与声音事件对应；如果声称使用固定机位，那么构图内是否持续有新信息进入。方法不彻底时，作品容易变成氛围素材的堆叠。</p>
+
+      <h3>四、三类内容的横向比较</h3>
+      <div class="compare">
+        <div class="compare-col">
+          <h4>剧情短片 / 人物纪录</h4>
+          <ul>
+            <li>依赖剧本或真实人物，前期准备占比高</li>
+            <li>单集 18—26 分钟，需要完整观看</li>
+            <li>评判重点：结构完整度、表演或现场捕捉</li>
+            <li>适合：想跟着人物走完一段经历的观众</li>
+          </ul>
+        </div>
+        <div class="compare-col">
+          <h4>实验影像 / 幕后制作</h4>
+          <ul>
+            <li>依赖方法设计，后期与声音占比高</li>
+            <li>单集 5—15 分钟，可片段式观看</li>
+            <li>评判重点：方法是否贯彻、演示是否可复用</li>
+            <li>适合：想学具体技术或观察形式的观众</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>五、制作流程上的实际差异</h3>
+      <p>三类内容的成本结构差别很大。剧情短片的成本集中在剧本打磨、演员与场景调度，通常需要 2—3 轮围读和至少一次试拍；人物纪录的成本集中在前期调研与拍摄周期，往往需要多次回访才能拍到自然状态；实验影像的成本则集中在后期，声音设计与画面重组可能占到总工时的六成以上。理解这一点，有助于判断一家机构的内容重心：如果幕后制作类内容占比高，说明它在流程上更成熟；如果实验影像占比高，说明它在试新形式。</p>
+      <p>此外，三条内容线的更新节奏也不同。剧情短片双周更，人物纪录月更，实验影像不定期。这种节奏差异并非随意安排，而是由各自的制作周期决定。观众在追更时可以据此调整预期，避免因更新间隔产生误判。</p>
+    </section>
+
+    <!-- 6. 体验指南 -->
+    <section class="sec" id="guide">
+      <div class="sec-head">
+        <span class="kicker">GUIDE</span>
+        <h2>观看与投入的顺序建议</h2>
+        <p class="sec-desc">第一次接触这类内容，按什么顺序看、怎么判断值不值得继续。</p>
+      </div>
+      <hr class="sec-line">
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div><h3>先用一集人物纪录建立基准</h3><p>人物纪录的完成度最容易被感知。<b>建议从《老城手记》修复版任选一集</b>，观察镜头是否克制、环境声是否保留，这能快速判断制作水准。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div><h3>再进入剧情短片的连续叙事</h3><p>《潮汐之后》从第 1 集看起，前两集用于建立人物关系。<b>如果第三集仍无法投入</b>，说明这类慢节奏现实题材不适合当前观看状态，不必勉强。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div><h3>按需求选择幕后或实验内容</h3><p>想学技术就看《一盏灯的布光》，想观察形式就看《回声采样》。<b>两类内容都不需要连续观看</b>，适合碎片时间。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div><h3>用放映活动检验整体判断</h3><p>线下放映通常会把不同类型混排，<b>一场放映能覆盖三到四条内容线</b>，是了解机构整体取向最省时的方式。</p></div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div><h3>创作者额外核对扶持条款</h3><p>申请扶持前，重点确认<b>设备支持范围、版权归属与发行渠道</b>三项。条款写得不具体的计划，执行时容易产生分歧。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="sec faq" id="faq">
+      <div class="sec-head">
+        <span class="kicker">FAQ</span>
+        <h2>常见问题</h2>
+      </div>
+      <details open>
+        <summary>《潮汐之后》一般多久更新一集？</summary>
+        <div class="ans">目前是双周更，单集 18—24 分钟。第 6 集于 11 月 25 日上线，第 7 集预计 12 月 9 日。遇到外景延期时会顺延一周，具体以更新动态为准。</div>
+      </details>
+      <details>
+        <summary>剧情短片和人物纪录在制作上有什么区别？</summary>
+        <div class="ans">剧情短片依赖剧本、演员与场景调度，前期需要围读与试拍；人物纪录依赖调研与拍摄周期，往往要多次回访才能拍到自然状态。<b>前者成本在剧本与表演，后者成本在时间与现场捕捉。</b></div>
+      </details>
+      <details>
+        <summary>第一次接触，从哪一部开始看比较好？</summary>
+        <div class="ans">建议先看《老城手记》修复版任意一集，单集独立、门槛低；再进入《潮汐之后》第 1 集。如果想看技术内容，可以直接从《一盏灯的布光》第 1 集开始。</div>
+      </details>
+      <details>
+        <summary>实验影像需要“看懂”吗？</summary>
+        <div class="ans">不需要。实验影像更接近方法演示，观看重点是声音与画面如何互相作用。<b>建议佩戴耳机、连续看完单集</b>，中途切换会打断节奏判断。</div>
+      </details>
+      <details>
+        <summary>创作者扶持计划包含哪些具体支持？</summary>
+        <div class="ans">冬季批包含三项：设备租借（机位、灯具、录音）、后期工时（调色与混音各 8 小时起）、发行对接（社区首页推荐位与放映入选资格）。版权归创作者所有，机构仅保留展映权。</div>
+      </details>
+      <details>
+        <summary>短片竞赛单元的评审标准是什么？</summary>
+        <div class="ans">本期设两项重点：叙事完整度与声音设计。叙事完整度看结构与人物转变是否成立；声音设计看环境声层次与对白清晰度。<b>两项各占 40%</b>，其余 20% 为整体完成度。</div>
+      </details>
+    </section>
+
+    <!-- 8. 用户评论 -->
+    <section class="sec" id="comments">
+      <div class="sec-head">
+        <span class="kicker">COMMUNITY</span>
+        <h2>观众与创作者评论</h2>
+        <p class="sec-desc">来自社区的真实语气反馈，含中性评价。</p>
+      </div>
+      <div class="cmt-grid">
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c8324b">林</span><span class="cmt-name">林间有雾</span><span class="cmt-when">今天 10:12</span></div><p><span class="ref">《潮汐之后》</span>第 6 集的账目戏拍得克制，没有配乐反而更有压力。就是结尾略仓促。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#1b6a6f">陈</span><span class="cmt-name">陈默剪辑室</span><span class="cmt-when">今天 09:40</span></div><p>《一盏灯的布光》第 5 集的机位图太实用了，照着搭了一遍，逆光补光确实好很多。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b98a2e">周</span><span class="cmt-name">周舟不加班</span><span class="cmt-when">昨天 22:31</span></div><p>《老城手记》修复版画质提升明显，修表那集的齿轮细节终于看清了。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#7a5f22">阿</span><span class="cmt-name">阿岚看片</span><span class="cmt-when">昨天 21:05</span></div><p>夜行电台第 23 期通勤话题聊得有点散，前半段好，后半段跑题了。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#39404f">许</span><span class="cmt-name">许一舟</span><span class="cmt-when">昨天 18:47</span></div><p>《一条街的三小时》建议戴耳机看，环境声是主角。不过 46 分钟确实考验耐心。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8f1f34">沈</span><span class="cmt-name">沈边边</span><span class="cmt-when">11-24 20:10</span></div><p>扶持计划条款这次写得比较清楚，版权归创作者这点很关键。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#1b6a6f">顾</span><span class="cmt-name">顾南声</span><span class="cmt-when">11-24 15:22</span></div><p>《回声采样》末集的低频处理很妙，但前三集方法有点重复。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c8324b">吴</span><span class="cmt-name">吴小满</span><span class="cmt-when">11-23 23:08</span></div><p>短片竞赛收了 87 部了？我投的那部还没收到确认邮件。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#b98a2e">郑</span><span class="cmt-name">郑在拍片</span><span class="cmt-when">11-23 19:36</span></div><p>后期工坊开放预约后约到了混音时段，价格比外面便宜，就是档期紧。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#39404f">何</span><span class="cmt-name">何以为家</span><span class="cmt-when">11-22 21:50</span></div><p>《老城手记》有几集采访略多，镜头停下来看动作的时间少了。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#7a5f22">苏</span><span class="cmt-name">苏木木</span><span class="cmt-when">11-22 11:14</span></div><p>11 月 29 日的放映已经约上了，映后谈希望能多讲讲摄影机位。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#8f1f34">罗</span><span class="cmt-name">罗盘不转</span><span class="cmt-when">11-21 22:40</span></div><p>城市漫游这个方向挺有意思，希望别只拍同一种街区。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#1b6a6f">唐</span><span class="cmt-name">唐小糖</span><span class="cmt-when">11-20 20:03</span></div><p>《潮汐之后》前五集的评论音轨信息量很大，讲选角那段反复听了三遍。</p></div>
+        <div class="cmt"><div class="cmt-top"><span class="avatar" style="background:#c8324b">白</span><span class="cmt-name">白露为霜</span><span class="cmt-when">11-19 16:28</span></div><p>投稿规则调整后要求标音乐授权，这点其实早该做了。</p></div>
+      </div>
+    </section>
+
+    <!-- 9. 相关资讯 -->
+    <section class="sec" id="news">
+      <div class="sec-head">
+        <span class="kicker">NEWS</span>
+        <h2>相关资讯</h2>
+        <p class="sec-desc">机构动态与内容生态的具体变化。</p>
+      </div>
+      <div class="news-list">
+        <article class="news">
+          <img src="https://picsum.photos/seed/news-chaoxi07/600/400" width="600" height="400" alt="《潮汐之后》第 7 集外景筹备现场" loading="lazy">
+          <div class="news-body"><h3>《潮汐之后》第 7 集进入外景筹备，预计 12 月 9 日上线</h3><p>本集将加入一条新的船厂支线，制作组已在渔镇完成勘景。</p><div class="news-date">2026-11-25</div></div>
+        </article>
+        <article class="news">
+          <img src="https://picsum.photos/seed/news-fuchi12/600/400" width="600" height="400" alt="创作者扶持计划评审会议现场" loading="lazy">
+          <div class="news-body"><h3>冬季扶持计划首日收到 62 份申请，评审改为双人复核</h3><p>申请集中在剧情短片与纪录两个方向，12 月 5 日公布结果。</p><div class="news-date">2026-11-24</div></div>
+        </article>
+        <article class="news">
+          <img src="https://picsum.photos/seed/news-laocheng28/600/400" width="600" height="400" alt="《老城手记》修复版调色工作台" loading="lazy">
+          <div class="news-body"><h3>《老城手记》第 27、28 集 4K 修复完成，暗部噪点明显下降</h3><p>修复版与原版并存，观众可对照观看同一镜头的差异。</p><div class="news-date">2026-11-24</div></div>
+        </article>
+        <article class="news">
+          <img src="https://picsum.photos/seed/news-jingsai09/600/400" width="600" height="400" alt="短片竞赛单元评审打分表" loading="lazy">
+          <div class="news-body"><h3>短片竞赛单元新增声音设计单项评审</h3><p>由三位声音师轮值打分，占总评分 40%，评审标准同步公开。</p><div class="news-date">2026-11-23</div></div>
+        </article>
+        <article class="news">
+          <img src="https://picsum.photos/seed/news-fangying29/600/400" width="600" height="400" alt="城西放映厅《老城手记》放映预约页" loading="lazy">
+          <div class="news-body"><h3>11 月 29 日放映预约过半，现场余 36 席</h3><p>放映修复版前三集，映后设 40 分钟导演与摄影对谈。</p><div class="news-date">2026-11-21</div></div>
+        </article>
+        <article class="news">
+          <img src="https://picsum.photos/seed/news-tougao05/600/400" width="600" height="400" alt="社区投稿规则页面更新提示" loading="lazy">
+          <div class="news-body"><h3>社区投稿规则调整：须标注素材来源与音乐授权</h3><p>未标注作品将被退回补正，补正后可再次提交，不影响评审排序。</p><div class="news-date">2026-11-12</div></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10. 相关推荐 -->
+    <section class="sec" id="related">
+      <div class="sec-head">
+        <span class="kicker">RELATED</span>
+        <h2>延伸方向与相关条目</h2>
+        <p class="sec-desc">与当前内容线相邻的具体方向，便于继续深入。</p>
+      </div>
+      <div class="rel-tags">
+        <a href="/#works"><b>导演评论音轨</b></a>
+        <a href="/#works">低成本布光方案</a>
+        <a href="/#works"><b>修复版对照观看</b></a>
+        <a href="/#works">环境声采集</a>
+        <a href="/#works"><b>单集独立叙事</b></a>
+        <a href="/#works">长镜头调度</a>
+        <a href="/#works"><b>短片竞赛评审表</b></a>
+        <a href="/#works">扶持计划条款</a>
+      </div>
+    </section>
+
+    <!-- 11. 补充板块：榜单 + 时间线 -->
+    <section class="sec" id="rank">
+      <div class="sec-head">
+        <span class="kicker">RANKING</span>
+        <h2>本月作品热度榜</h2>
+        <p class="sec-desc">按 11 月 1 日至 25 日的完整观看与收藏综合排序。</p>
+      </div>
+      <div class="rank-list">
+        <div class="rank-item"><div class="rank-name">老城手记 · 修表匠<span>人物纪录 · 4K 修复版</span></div><div class="rank-val">1.2 万</div></div>
+        <div class="rank-item"><div class="rank-name">潮汐之后 第 6 集<span>剧情短片 · 11-25 上线</span></div><div class="rank-val">9,860</div></div>
+        <div class="rank-item"><div class="rank-name">一盏灯的布光 第 5 集<span>幕后制作 · 工具向</span></div><div class="rank-val">7,430</div></div>
+        <div class="rank-item"><div class="rank-name">一条街的三小时<span>城市漫游 · 长镜头</span></div><div class="rank-val">6,120</div></div>
+        <div class="rank-item"><div class="rank-name">夜行电台 第 23 期<span>夜谈节目 · 通勤话题</span></div><div class="rank-val">5,780</div></div>
+        <div class="rank-item"><div class="rank-name">回声采样 末集<span>实验影像 · 声音重组</span></div><div class="rank-val">4,250</div></div>
+        <div class="rank-item"><div class="rank-name">潮汐之后 前五集评论音轨<span>剧情短片 · 口述制作</span></div><div class="rank-val">3,610</div></div>
+        <div class="rank-item"><div class="rank-name">老城手记 · 制秤人<span>人物纪录 · 原版</span></div><div class="rank-val">3,180</div></div>
+      </div>
+    </section>
+
+    <section class="sec" id="timeline">
+      <div class="sec-head">
+        <span class="kicker">TIMELINE</span>
+        <h2>近一个月内容线时间线</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl on"><div class="tl-date">2026-11-25</div><h3>《潮汐之后》第 6 集上线 · 冬季扶持计划开放</h3><p>第 6 集《退潮》21 分钟；扶持计划 30 个名额同日开放申请。</p></div>
+        <div class="tl"><div class="tl-date">2026-11-24</div><h3>《老城手记》第 27、28 集 4K 修复版入库</h3><p>暗部噪点与手部特写锐度为主要修复项。</p></div>
+        <div class="tl"><div class="tl-date">2026-11-22</div><h3>《一条街的三小时》上线</h3><p>城市漫游系列首集，46 分钟长镜头，保留完整环境声。</p></div>
+        <div class="tl"><div class="tl-date">2026-11-21</div><h3>11 月 29 日放映开放预约</h3><p>《老城手记》修复版前三集加映后谈。</p></div>
+        <div class="tl"><div class="tl-date">2026-11-19</div><h3>《一盏灯的布光》第 5 集更新</h3><p>逆光下的面部补光，附机位图与功率对照表。</p></div>
+        <div class="tl"><div class="tl-date">2026-11-12</div><h3>社区投稿规则调整生效</h3><p>须标注素材来源与音乐授权，可补正后重新提交。</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="side-right" aria-label="辅助信息">
+    <div class="panel">
+      <h2>社区热榜</h2>
+      <ol class="mini-rank">
+        <li><div><b>潮汐之后 第 6 集</b><span>讨论 312 · 剧情短片</span></div></li>
+        <li><div><b>老城手记 修表匠</b><span>讨论 268 · 人物纪录</span></div></li>
+        <li><div><b>一盏灯的布光</b><span>讨论 204 · 幕后制作</span></div></li>
+        <li><div><b>一条街的三小时</b><span>讨论 167 · 城市漫游</span></div></li>
+        <li><div><b>夜行电台 第 23 期</b><span>讨论 143 · 夜谈节目</span></div></li>
+        <li><div><b>回声采样 末集</b><span>讨论 96 · 实验影像</span></div></li>
+      </ol>
+    </div>
+
+    <div class="panel">
+      <h2>最新入库</h2>
+      <ul class="update-stream">
+        <li><time>今天 09:30</time>潮汐之后 第 6 集《退潮》</li>
+        <li><time>今天 08:10</time>冬季扶持计划申请入口</li>
+        <li><time>昨天 21:10</time>老城手记 27、28 集修复版</li>
+        <li><time>昨天 16:40</time>夜行电台 第 23 期文字稿</li>
+        <li><time>11-23</time>短片竞赛评审标准说明</li>
+        <li><time>11-22</time>一条街的三小时 正片</li>
+        <li><time>11-19</time>一盏灯的布光 第 5 集</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>可信度分层</h2>
+      <ul class="update-stream">
+        <li><time>一手</time>制作说明、机位图、评审标准表</li>
+        <li><time>一手</time>导演评论音轨与映后对谈记录</li>
+        <li><time>二手</time>社区投稿作品与观众短评</li>
+        <li><time>二手</time>外部转载的行业资讯摘要</li>
+      </ul>
+    </div>
+
+    <div class="panel panel-cta">
+      <h2>冬季扶持计划</h2>
+      <p>30 个名额，含设备租借、后期工时与发行对接，11 月 30 日 24:00 截止。</p>
+      <a class="btn-solid" href="/#guide">查看申请条件</a>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="brand-name">九妺窝有限公司</span>
+        <span class="brand-sub">JIUMEIWO · STUDIO</span>
+        <p>原创视频制作与社区内容运营机构。自制剧情短片、人物纪录与实验影像三条内容线，同时开放创作者扶持与线下放映。</p>
+      </div>
+      <div class="foot-col">
+        <h3>内容</h3>
+        <a href="/#works">剧情短片</a>
+        <a href="/#works">人物纪录</a>
+        <a href="/#works">城市漫游</a>
+        <a href="/#works">实验影像</a>
+        <a href="/#works">幕后制作</a>
+      </div>
+      <div class="foot-col">
+        <h3>社区</h3>
+        <a href="/#updates">最新动态</a>
+        <a href="/#guide">创作者扶持</a>
+        <a href="/#works">短片竞赛</a>
+        <a href="/#works">放映活动</a>
+        <a href="/#comments">观众评论</a>
+      </div>
+      <div class="foot-col">
+        <h3>了解</h3>
+        <a href="/#overview">品牌概览</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#rank">热度榜单</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 九妺窝有限公司</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>内容数据以站内条目页为准</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span>图片为占位示意</span>
+      <span class="sp"></span>
+      <span>本页信息更新于 2026-11-25</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('searchForm');
+  var input = document.getElementById('searchInput');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#workCards .card'));
+  var noResult = document.getElementById('noResult');
+
+  function runFilter(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      cards.forEach(function(c){ c.classList.remove('hide'); });
+      noResult.classList.remove('show');
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var text = c.textContent.toLowerCase();
+      var match = text.indexOf(q) !== -1;
+      c.classList.toggle('hide', !match);
+      if(match) hit++;
+    });
+    noResult.classList.toggle('show', hit === 0);
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    runFilter();
+    var works = document.getElementById('works');
+    if(works) works.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  input.addEventListener('input', runFilter);
+})();
+</script>
+</body>
+                                                                                              </html>
